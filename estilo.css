@@ -1,0 +1,70 @@
+ 
+ 
+ .navv{
+    background-color: #a3c9dd;
+ }
+ .hero-section {
+            
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(27, 27, 37, 0.5)), url('https://i.postimg.cc/yxkFrGxH/perfums-fotor-20231220125015-5b4cba10-1091-4840-90a4-26374e3752e3.webp');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 100px 0;
+            margin-bottom: 30px;
+        }
+        .brand-logo {
+            height: 80px;
+            margin: 70px;
+            filter: grayscale(100%) brightness(120%);
+            transition: all 0.3s ease;
+            
+        }
+        .brand-logo:hover {
+            filter: none;
+        }
+        .product-card {
+            transition: transform 0.3s ease;
+            margin-bottom: 20px;
+        }
+
+        .card-img-top{
+height: 200px;
+object-fit: cover;
+
+        }
+        
+        .product-card:hover {
+            transform: translateY(-5px);
+        }
+
+
+        .card-img-container {
+            height: 250px; 
+            overflow: hidden;
+        }
+        
+        .card-img-container img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+        
+        .card-img-container:hover img {
+            transform: scale(1.1);
+        }
+        footer {
+            background-color: #2e2e30;
+            color: rgb(194, 183, 183);
+            padding: 40px 0;
+        
+        }
+        a.text-white-hover{
+            text-decoration: none;
+            color: rgb(255, 255, 255);
+        }
+        
+    
+            
+        
+        
