@@ -82,7 +82,7 @@ body {
     height: 2px;
     bottom: 0;
     left: 0;
-    background-color: #7773a3;
+    background-color: rgb(223, 224, 235);
     transition: width 0.3s;
 }
 
