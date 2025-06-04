@@ -1,0 +1,150 @@
+
+        :root {
+            --primary-color: #cfcfcf;
+            --secondary-color: #a3c9dd;
+            --text-color: #333;
+            --light-text: #f8f9fa;
+            --dark-bg: #343a40;
+            --transition: all 0.3s ease;
+        }
+        
+     
+        
+        
+        .hero-location {
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1513519245088-0e12902e5a38?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 120px 0;
+            text-align: center;
+        }
+        
+        .hero-location h1 {
+            font-size: 3.5rem;
+            font-weight: 700;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+        
+        /* Location Section */
+        .location-section {
+            padding: 80px 0;
+        }
+        
+        .section-title {
+            font-size: 2.5rem;
+            font-weight: 400;
+            margin-bottom: 40px;
+            position: relative;
+            color: var(--primary-color);
+            text-transform: uppercase;
+            letter-spacing: 3px;
+        }
+        
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: -15px;
+            left: 0;
+            width: 80px;
+            height: 3px;
+            background-color: var(--primary-color);
+        }
+        
+        /* Map Container */
+        #map {
+            height: 500px;
+            width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 5px 25px rgba(0,0,0,0.1);
+            margin-bottom: 40px;
+        }
+        
+        .location-card {
+            background: white;
+            border-radius: 10px;
+            padding: 30px;
+            box-shadow: 0 5px 25px rgba(0,0,0,0.05);
+            margin-bottom: 30px;
+            transition: var(--transition);
+            height: 100%;
+        }
+        
+        .location-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+        }
+        
+        .location-card h3 {
+            color: var(--primary-color);
+            margin-bottom: 20px;
+        }
+        
+        .location-info {
+            margin-bottom: 20px;
+        }
+        
+        .location-info i {
+            color: var(--primary-color);
+            margin-right: 10px;
+            width: 20px;
+            text-align: center;
+        }
+        
+        
+        .social-links a {
+            color: var(--light-text);
+            font-size: 1.3rem;
+            margin-right: 15px;
+            transition: var(--transition);
+        }
+        
+        .social-links a:hover {
+            color: var(--primary-color);
+            transform: translateY(-3px);
+        }
+        
+        /* Responsive */
+        @media (max-width: 991.98px) {
+            .hero-location h1 {
+                font-size: 2.8rem;
+            }
+            
+            .section-title {
+                font-size: 2rem;
+            }
+        }
+        
+        @media (max-width: 767.98px) {
+            .hero-location {
+                padding: 80px 0;
+            }
+            
+            .hero-location h1 {
+                font-size: 2.2rem;
+            }
+            
+            #map {
+                height: 400px;
+            }
+        }
+        
+        @media (max-width: 575.98px) {
+            .navbar-brand {
+                font-size: 2rem;
+            }
+            
+            .hero-location h1 {
+                font-size: 1.8rem;
+            }
+            
+            .section-title {
+                font-size: 1.5rem;
+            }
+            
+            #map {
+                height: 300px;
+            }
+        }
+   
