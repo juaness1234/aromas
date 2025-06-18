@@ -3,14 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Localización - Aromas del Sinú</title>
+    <title>Información - Aromas del Sinú</title>
     
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Allura&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Jura:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Jura:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
-    <link rel="stylesheet" href="geocalizacion.css">
     <link rel="stylesheet" href="estilo.css">
    
 </head>
@@ -58,27 +56,156 @@
     </nav>
 
     
-    <section class="hero-location">
+    <section class="hero-info">
         <div class="container">
-            <h1>Nuestra Ubicación</h1>
-            <p class="lead">Visítanos y descubre el mundo de las fragancias</p>
+            <h1>Información Importante</h1>
+            <p class="lead">Todo lo que necesitas saber sobre nuestros productos y servicios</p>
         </div>
     </section>
 
    
-    <section class="location-section">
+    <section class="info-section" id="faq">
         <div class="container">
-            <h2 class="section-title">Encuéntranos</h2>
+            <h2 class="section-title">Preguntas Frecuentes</h2>
             
-            <div id="map"></div>
-            
-            
-            
-           
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <div class="accordion" id="faqAccordion">
+                        <div class="accordion-item">
+                            <h3 class="accordion-header" id="headingOne">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne">
+                                    ¿Cómo puedo verificar la autenticidad de los perfumes?
+                                </button>
+                            </h3>
+                            <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    <p>Todos nuestros perfumes son 100% originales y provienen directamente de distribuidores autorizados. Cada producto incluye su código de serie, hologramas de autenticidad y empaque original. Además, ofrecemos garantía de autenticidad en todas tus compras.</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="accordion-item">
+                            <h3 class="accordion-header" id="headingTwo">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo">
+                                    ¿Cuál es la política de devoluciones?
+                                </button>
+                            </h3>
+                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    <p>Aceptamos devoluciones dentro de los 7 días posteriores a la compra, siempre que el producto esté en su empaque original, sin haber sido usado y con todos los accesorios incluidos. Los gastos de envío por devolución corren por cuenta del cliente.</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="accordion-item">
+                            <h3 class="accordion-header" id="headingThree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree">
+                                    ¿Hacen envíos a otras ciudades?
+                                </button>
+                            </h3>
+                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    <p>Sí, realizamos envíos a todo el territorio nacional a través de servicios de mensajería especializada. Los tiempos de entrega varían según la ciudad de destino (3-5 días hábiles para principales ciudades). Los costos de envío se calculan al finalizar tu compra.</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="accordion-item">
+                            <h3 class="accordion-header" id="headingFour">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour">
+                                    ¿Cómo elijo el perfume adecuado para mí?
+                                </button>
+                            </h3>
+                            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    <p>Ofrecemos asesoría personalizada en nuestra tienda física. También puedes guiarte por nuestras categorías (frutales, amaderados, florales, etc.) y leer las descripciones detalladas de cada fragancia. Si necesitas ayuda adicional, contáctanos por WhatsApp para recibir recomendaciones basadas en tus preferencias.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
+    
+    <section class="info-section bg-light" id="como-comprar">
+        <div class="container">
+            <h2 class="section-title">Cómo Comprar</h2>
+            
+            <div class="row">
+                <div class="col-md-6 col-lg-3">
+                    <div class="info-card text-center">
+                        <div class="icon-container mx-auto mb-4" style="background-color: rgba(142, 108, 136, 0.1); width: 80px; height: 80px; border-radius: 50%; display: flex; align-items: center; justify-content: center;">
+                            <i class="fas fa-search" style="font-size: 1.8rem; color: var(--primary-color);"></i>
+                        </div>
+                        <h3>1. Explora</h3>
+                        <p>Navega por nuestras categorías o utiliza el buscador para encontrar tu perfume ideal. Lee las descripciones y notas olfativas.</p>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 col-lg-3">
+                    <div class="info-card text-center">
+                        <div class="icon-container mx-auto mb-4" style="background-color: rgba(142, 108, 136, 0.1); width: 80px; height: 80px; border-radius: 50%; display: flex; align-items: center; justify-content: center;">
+                            <i class="fas fa-cart-plus" style="font-size: 1.8rem; color: var(--primary-color);"></i>
+                        </div>
+                        <h3>2. Agrega</h3>
+                        <p>Selecciona la cantidad y tamaño deseado, luego haz clic en "Añadir al carrito". Puedes seguir comprando o ir al carrito.</p>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 col-lg-3">
+                    <div class="info-card text-center">
+                        <div class="icon-container mx-auto mb-4" style="background-color: rgba(142, 108, 136, 0.1); width: 80px; height: 80px; border-radius: 50%; display: flex; align-items: center; justify-content: center;">
+                            <i class="fas fa-truck" style="font-size: 1.8rem; color: var(--primary-color);"></i>
+                        </div>
+                        <h3>3. Envío</h3>
+                        <p>Ingresa tus datos de envío y selecciona el método de entrega. Calculamos los costos en tiempo real.</p>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 col-lg-3">
+                    <div class="info-card text-center">
+                        <div class="icon-container mx-auto mb-4" style="background-color: rgba(142, 108, 136, 0.1); width: 80px; height: 80px; border-radius: 50%; display: flex; align-items: center; justify-content: center;">
+                            <i class="fas fa-credit-card" style="font-size: 1.8rem; color: var(--primary-color);"></i>
+                        </div>
+                        <h3>4. Pago</h3>
+                        <p>Elige tu método de pago (tarjeta, transferencia o contraentrega) y completa tu compra. ¡Recibirás tu pedido pronto!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <section class="info-section" id="promociones">
+        <div class="container">
+            <h2 class="section-title">Promociones</h2>
+            
+            <div class="row">
+                <div class="col-md-6 col-lg-4">
+                    <div class="promo-card">
+                        <div class="position-relative">
+                            <img src="https://images.unsplash.com/photo-1594035910387-fea47794261f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=880&q=80" class="card-img-top" alt="Promoción 1">
+                            <span class="promo-badge">-20%</span>
+                        </div>
+                        <div class="card-body">
+                            <h3 class="card-title">Pack Aromas Esenciales</h3>
+                            <p class="card-text">Llévate 3 fragancias seleccionadas con un 20% de descuento. Perfecto para descubrir nuevos aromas.</p>
+                            
+                        </div>
+                    </div>
+                </div>
+                
+                
+            </div>
+        </div>
+    </section>
+
+    
    
+
+    
      <footer id="contacto" class="bg-dark text-white py-5 mt-5">
         <div class="container">
             <div class="row">
@@ -174,74 +301,5 @@
     
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>  <script src="javaindex.js"></script>
 <script src="javaindex.js"></script>
-
-
-    
-    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
-    
-    <script>
-        
-        const map = L.map('map').setView([8.7558315, -75.8716694], 14); 
-        
-        
-        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-            attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-        }).addTo(map);
-        
-       
-        const mainStore = L.marker([8.7558315, -75.8716694]).addTo(map)
-            .bindPopup("<b>Aromas del Sinú - Tienda Principal</b><br>Carrera 5 #10-20, Centro");
-        
-        
-        
-        
-        document.addEventListener('DOMContentLoaded', function() {
-            const cartCount = document.getElementById('cart-count');
-            let count = localStorage.getItem('cartCount') || 0;
-            cartCount.textContent = count;
-        });
-    </script>
-    <div class="modal fade" id="cartModal" tabindex="-1" aria-labelledby="cartModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-lg">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="cartModalLabel">Tu Carrito de Compras</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <div class="table-responsive">
-                        <table class="table">
-                            <thead>
-                                <tr>
-                                    <th scope="col">Producto</th>
-                                    <th scope="col">Precio</th>
-                                    <th scope="col">Cantidad</th>
-                                    <th scope="col">Total</th>
-                                    <th scope="col">Acción</th>
-                                </tr>
-                            </thead>
-                            <tbody id="cart-items">
-                            </tbody>
-                            <tfoot>
-                                <tr>
-                                    <td colspan="3" class="text-end"><strong>Total del Carrito:</strong></td>
-                                    <td colspan="2" id="cart-total"><strong>$0.00</strong></td>
-                                </tr>
-                            </tfoot>
-                        </table>
-                    </div>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Seguir Comprando</button>
-                    <button type="button" class="btn btn-primary" id="checkout-button">Proceder al Pago</button>
-                </div>
-            </div>
-        </div>
-    </div> 
-    
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>  <script src="javaindex.js"></script>
-<script src="javaindex.js"></script>
-</body>
-</html>
 </body>
 </html>
